@@ -1,0 +1,47 @@
+CLASS USER
+
+   CATEGORY "AdnWebAPI Settings"
+   
+	CATEGORY "Service Details"
+
+	
+			
+						POLICY "ZGWSAMPLE_SRV"
+					KEYNAME "Software\Policies\GWPAM\AdnWebAPI\ServiceDetails\ZGWSAMPLE_SRV"
+EXPLAIN "Url: This is URL for the SAP NetWeaver Gateway OData service. Please ensure that the service is in working condition.
+
+Client: The SAP Client which exposes the OData service. E.g 000 , 100 etc
+
+SSO Option: Please select authentication mechanism for OData connection.
+
+RootCASubjectName: The X509 Root Certificate Subject to be used for X509 Certficate based authentication"
+
+				PART "Url" EDITTEXT VALUENAME "Url"
+				END PART
+
+				PART "Client" EDITTEXT VALUENAME "Client"
+				END PART
+
+				PART "SSO Options" DROPDOWNLIST VALUENAME "SSO" 
+					ITEMLIST
+						NAME "SAML 2.0" VALUE Numeric 1
+						NAME "X509 Certificate" VALUE Numeric 2
+						NAME "Basic" VALUE Numeric 3
+						NAME "Kerberos" VALUE Numeric 4
+					END ITEMLIST
+				END PART
+
+				PART "RootCASubjectName" EDITTEXT VALUENAME "RootCASubjectName"
+				END PART
+				
+				PART "ServiceVersion" EDITTEXT VALUENAME "ServiceVersion"
+				END PART
+			END POLICY
+						END CATEGORY
+	END CATEGORY
+
+		
+	
+	
+
+

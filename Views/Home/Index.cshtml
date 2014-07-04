@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Autodesk Viewer Demo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section featured 
+{
+    <section class="featured">
+        <div class="content-wrapper">
+            <img src="~/Images/adsk.png"> 
+            <hgroup class="title">
+                @*<h1>@ViewBag.Title</h1>*@                  
+            </hgroup>
+        </div>
+    </section>
+}
+
+<link rel="stylesheet" href="https://viewing.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/jsTree3/themes/default/style.css")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jquery.layout-1.30.79.css")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/ng-grid.min.css")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/ADN/viewer.css")" />
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-ui-1.10.4.min.js")"></script>
+<script src="https://viewing.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script> 
+<script type="text/javascript" src="@Url.Content("~/Scripts/async.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jsTree3/jstree.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.layout.min-1.30.79.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/angular.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/ng-grid.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/ADN/viewer.js")"></script>
+
+
+<div id="masterDiv" style="width: 80%; margin-left: 10%;">
+
+    <div id="layoutContainer" style="height:1200px;">
+    
+        <div id="paneNorth" class="ui-layout-north" style="display:inline">
+            
+            <b>Select Model:</b>
+            <br/>
+            <select id="combo"
+                name="combo" 
+                onchange="onModelSelected()" 
+                style="height:20px; width:30%; font-family:sans-serif;">
+            </select>
+
+            <input id="urn" 
+                type="text" 
+                style="height:15px; width:68%; font-family:sans-serif;"
+                placeholder="Load Model from URN">
+
+        </div>
+
+        <div id="paneCenter" class="ui-layout-center">
+
+            <div id="viewerContainer" style="height:100%;">
+           
+                 <div id="propsDialog" title="SAP GWM Data">	 
+                    <table class="dialog_text" 
+                        id="propsTable" 
+                        border="1"  
+                        style="width:100%;">
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="paneSouth" class="ui-layout-south">
+
+            <b> SAP Products in use: </b>
+            </br>
+            </br>
+
+            <div ng-app ="Angular">
+                <div id="tableCtrlId" ng-controller="TableCtrl">
+                    <div class="gridStyle" ng-grid="gridOptions">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div id="paneWest" class="ui-layout-west">
+
+            <div id="jstree">
+            </div>
+
+        </div>
+
+    </div>
+</div>

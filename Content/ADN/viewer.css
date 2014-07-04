@@ -1,0 +1,42 @@
+    .ui-dialog {
+        position:absolute;
+	}
+
+    .ui-dialog.custom {
+        background:none;
+	    background-color:rgba(0, 0, 0, 0.2);
+	}
+
+    .ui-dialog .ui-dialog-titlebar {
+        border: 0;
+        padding: 0;
+        color: white;
+	    background:none;
+	    background-color:transparent;
+    }
+
+    .ui-dialog.custom.hovered {
+	    background-color:rgba(0, 0, 0, 0.6);
+	}
+
+    .dialog_text {
+      color: white;
+      font-size: 14px;
+    }
+
+    .gridStyle {
+        border: 1px solid rgb(0, 0, 0);
+        height:420px;
+    }
+
+    .ngRow.odd {
+      background-color: rgba(25, 193, 47, 0.1);
+    }
+
+    .ngRow.even {
+      background-color: rgba(0, 38, 255, 0.1);
+    }
+
+    .ngGrid {
+      background-color: transparent;
+    }
