@@ -15,7 +15,7 @@ An ASP.Net MVC website sample that integrates the Autodesk View and Data API wit
 
 ##Dependencies
 
-This sample has a dependency on [Developer-Autodesk/library--dotnet](https://github.com/Developer-Autodesk/library-dotnet). You will also need access to an SAP database and SAP GWM.
+This sample has a dependency on [Developer-Autodesk/library-dotnet](https://github.com/Developer-Autodesk/library-dotnet). You will also need access to an SAP database and SAP GWM.
 
 ##Setup/Usage Instructions
 
