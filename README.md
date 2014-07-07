@@ -12,9 +12,9 @@ AUTODESK PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS. AUTODESK SPECIFICALL
 *This sample is part of the [Developer-Autodesk/Autodesk-View-and-Data-API-Samples](https://github.com/Developer-Autodesk/autodesk-view-and-data-api-samples) repository.*
 
 An ASP.Net MVC website sample that integrates the Autodesk View and Data API with an SAP database using the [SAP Gateway for Microsoft (GWM)](http://scn.sap.com/docs/DOC-47563) technology. The sample demonstrates:
-*Displaying data from an SAP database in a custom panel when a model element is selected.
-*Selecting a model element when an item in a separate tree view is clicked.
-*Updating a data item and redisplaying the data in the model.
+* Displaying data from an SAP database in a custom panel when a model element is selected.
+* Selecting a model element when an item in a separate tree view is clicked.
+* Updating a data item and redisplaying the data in the model.
 
 ##Dependencies
 
