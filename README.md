@@ -17,7 +17,8 @@ This sample has a dependency on [Developer-Autodesk/library-dotnet](https://gith
 
 ##Setup/Usage Instructions
 
-*Todo*
+More detailed information will be exposed in a blog post, stay tuned. 
+
 
 ## License
 
