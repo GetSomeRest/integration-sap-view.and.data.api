@@ -288,7 +288,9 @@
     <Content Include="Images\parent.png" />
     <Content Include="Images\child.png" />
     <Content Include="SAP Service Reference\App.config" />
-    <Content Include="Scripts\ADN\viewer.js" />
+    <Content Include="Scripts\ADN\Autodesk.ADN.Toolkit.Viewer.js" />
+    <Content Include="Scripts\ADN\PropertyPanelExtension.js" />
+    <Content Include="Scripts\ADN\ui.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.min.js" />
     <Content Include="Scripts\angular-bootstrap.js" />

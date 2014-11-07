@@ -119,6 +119,7 @@ namespace AdnWebAPI.BusinessEntity
                 Categories.Outlook, 
                 "Selected authentication type " + authenticationType);
 
+            //ADN Modif
             ISSOProvider ssoProvider = SSOProviderFactory.Instance.GetSSOProvider(
                 authenticationType,
                 webRequest.Method,
@@ -132,8 +133,8 @@ namespace AdnWebAPI.BusinessEntity
 				case AuthenticationType.BASIC:
                     
                     webRequest.Credentials = new System.Net.NetworkCredential(
-                        "Your SAP Login Here...",
-                        "Your SAP Password Here...");
+                        "<SAP Username>", 
+                        "<SAP password>");
 					
                         break;
 			}

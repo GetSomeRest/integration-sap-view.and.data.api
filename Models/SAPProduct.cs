@@ -50,10 +50,15 @@ namespace AdnWebAPI.Models
             SupplierId = product.SupplierId;
             SupplierName = product.SupplierName;
             Currency = getCurrencyCode(product.CurrencyCode);
+            Description = product.Description;
         }
 
         [DataMember]
         public string ProductId
+        { get; set; }
+
+        [DataMember]
+        public string Description
         { get; set; }
 
         [DataMember]

@@ -28,8 +28,9 @@
 <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.layout.min-1.30.79.js")"></script>
 <script type="text/javascript" src="@Url.Content("~/Scripts/angular.min.js")"></script>
 <script type="text/javascript" src="@Url.Content("~/Scripts/ng-grid.min.js")"></script>
-<script type="text/javascript" src="@Url.Content("~/Scripts/ADN/viewer.js")"></script>
-
+<script type="text/javascript" src="@Url.Content("~/Scripts/ADN/Autodesk.ADN.Toolkit.Viewer.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/ADN/PropertyPanelExtension.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/ADN/ui.js")"></script>
 
 <div id="masterDiv" style="width: 80%; margin-left: 10%;">
 
@@ -70,9 +71,9 @@
 
         <div id="paneSouth" class="ui-layout-south">
 
-            <b> SAP Products in use: </b>
-            </br>
-            </br>
+            <button type="button" onclick="">SAP Products in use:</button> 
+            <br>
+            <br>
 
             <div ng-app ="Angular">
                 <div id="tableCtrlId" ng-controller="TableCtrl">

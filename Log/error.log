@@ -1,0 +1,9 @@
+An error occurred while processing this request.
+   at System.Data.Services.Client.DataServiceRequest.Execute[TElement](DataServiceContext context, QueryComponents queryComponents)
+   at System.Data.Services.Client.DataServiceQuery`1.Execute()
+   at System.Data.Services.Client.DataServiceQuery`1.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Services.Client.DataServiceQueryProvider.ReturnSingleton[TElement](Expression expression)
+   at System.Data.Services.Client.DataServiceQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at AdnWebAPI.Controllers.SAPConnector.GetProductById(String productId) in c:\Users\Administrator\Dropbox\Autodesk.ADN.CloudAPI\Autodesk.ADN.WebProjects\Autodesk.ADN.WebAPI\AdnWebAPI\Controllers\SAPController.cs:line 109
