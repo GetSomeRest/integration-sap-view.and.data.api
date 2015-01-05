@@ -17,7 +17,12 @@ This sample has a dependency on [Developer-Autodesk/library-dotnet](https://gith
 
 ##Setup/Usage Instructions
 
-More detailed information will be exposed in a blog post, stay tuned. 
+
+* You need to have an SAP developer account to be able to run that sample. You can request an SAP account there: http://scn.sap.com/community/developer-center
+* Fill up the Credentials.cs class with valid credentials obtained by creating your Cloud Application at https://developer.autodesk.com/
+* Fill up the Credentials.cs class with your SAP username and password
+* Build the sample
+* Deploy in IIS with method of your choice
 
 
 ## License

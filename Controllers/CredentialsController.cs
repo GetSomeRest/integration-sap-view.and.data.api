@@ -18,9 +18,9 @@ namespace AdnWebAPI.Controllers
         CredentialsController()
         {
             _viewDataClient = new AdnViewDataClient(
-                UserSettings.BASE_URL,
-                UserSettings.CONSUMER_KEY,
-                UserSettings.CONSUMER_SECRET);
+                Credentials.BASE_URL,
+                Credentials.CONSUMER_KEY,
+                Credentials.CONSUMER_SECRET);
         }
 
         public async Task<string> Get()

@@ -7,6 +7,7 @@ using SAP.IW.SSO;
 using System.Globalization;
 using SAP.IW.GWPAM.Common.Configuration;
 using System.Web;
+using AdnWebAPI.Controllers;
 
 namespace AdnWebAPI.BusinessEntity
 {
@@ -133,8 +134,8 @@ namespace AdnWebAPI.BusinessEntity
 				case AuthenticationType.BASIC:
                     
                     webRequest.Credentials = new System.Net.NetworkCredential(
-                        "<SAP Username>", 
-                        "<SAP password>");
+                        Credentials.SAP_USERNAME,
+                        Credentials.SAP_PASSWORD);
 					
                         break;
 			}

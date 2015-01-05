@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autodesk.ADN.Toolkit.ViewData">
+      <HintPath>Controllers\Autodesk.ADN.Toolkit.ViewData.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.Edm, Version=5.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -196,7 +199,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SAPController.cs" />
     <Compile Include="Controllers\CredentialsController.cs" />
-    <Compile Include="Controllers\UserSettings.cs" />
+    <Compile Include="Controllers\Credentials.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -670,12 +673,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Autodesk.ADN.Toolkit\Autodesk.ADN.Toolkit.ViewData\Autodesk.ADN.Toolkit.ViewData.csproj">
-      <Project>{adbdd270-a9ad-4564-a999-61fad27fb992}</Project>
-      <Name>Autodesk.ADN.Toolkit.ViewData</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
