@@ -1,6 +1,7 @@
 
 #SAP Integration sample
 
+**This sample is retired, it is not maintained anymore.** It is provided as-is and we discourage using it in your production code. If you are looking for a database integration sample, take a look at [view.and.data-nodejs-mongo.sample](https://github.com/Developer-Autodesk/view.and.data-nodejs-mongo.sample)
 
 ##Description
 
